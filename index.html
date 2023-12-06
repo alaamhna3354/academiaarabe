@@ -21,9 +21,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
 	<!-- Web Fonts  -->
-	<link id="googleFonts"
-		href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CPlayfair+Display:400,700,900&display=swap"
-		rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Cairo:wght@500&display=swap" rel="stylesheet">
+	<!-- Web Arabic Fonts  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Marhey&family=Ruwudu:wght@500&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/theme.css">
 	<!-- Vendor CSS -->
@@ -49,34 +53,34 @@
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
 <style>
-	.accordion-card {
+	.Academia-card {
     overflow:hidden;
     position:relative;
     will-change:auto
   }
-  .accordion-card-group {
+  .Academia-card-group {
     width:100%
   }
-  .accordion-card-container {
+  .Academia-card-container {
     display:block;
     height:100%;
     width:100%
   }
-  .accordion-card-container:active .button,
-  .accordion-card-container:focus .button,
-  .accordion-card-container:hover .button {
+  .Academia-card-container:active .button,
+  .Academia-card-container:focus .button,
+  .Academia-card-container:hover .button {
     transform:scale(1.1)
   }
-  .accordion-card-bg {
+  .Academia-card-bg {
     background:#002979;
     overflow:hidden;
     transition:background-color .7s ease-in-out;
     z-index:2
   }
-  .accordion-card-bg .title {
+  .Academia-card-bg .title {
     color:#fff
   }
-  .accordion-card .title {
+  .Academia-card .title {
     color:#181818;
     font-size:1.5rem;
     font-weight:600;
@@ -86,36 +90,36 @@
     transition:left .7s ease-in-out
   }
   @media (min-width:768px) {
-    .accordion-card .title {
+    .Academia-card .title {
       font-size:1.875rem;
       line-height:2.375rem
     }
   }
-  .accordion-card.theme-adults .accordion-card-bg {
-    background:#8ab6f6;
+  .Academia-card.theme-presenciales .Academia-card-bg {
+    background:#46ce65;
   }
-  .accordion-card.theme-adults .button {
-    color:#8ab6f6;
+  .Academia-card.theme-presenciales .button {
+    color:#46ce65;
   }
-  .accordion-card.theme-junior .accordion-card-bg {
+  .Academia-card.theme-Online .Academia-card-bg {
     background:#f25455
   }
-  .accordion-card.theme-junior .button {
+  .Academia-card.theme-Online .button {
     color:#f25455
   }
-  .accordion-card.theme-companies .accordion-card-bg {
+  .Academia-card.theme-Híbridos .Academia-card-bg {
     background:#0b3954;
   }
-  .accordion-card.theme-companies .button {
+  .Academia-card.theme-Híbridos .button {
     color:#0b3954;
   }
-  .accordion-card-fg {
+  .Academia-card-fg {
     position:relative
   }
-  .accordion-card .image {
+  .Academia-card .image {
     overflow:hidden
   }
-  .accordion-card .image img {
+  .Academia-card .image img {
     height:100%;
     -o-object-fit:cover;
     object-fit:cover;
@@ -123,94 +127,94 @@
     object-position:center;
     width:100%
   }
-  .accordion-card .info {
+  .Academia-card .info {
     color:#fff;
     opacity:0;
     transition:opacity .5s ease-in;
     transition-delay:.6s
   }
   @media (max-width:61.99em) {
-    .accordion-card {
+    .Academia-card {
       height:var(--fg-height);
       margin:0 auto;
       max-width:25rem;
       transition:height .7s ease-in-out
     }
-    .accordion-card:not(:last-child) {
+    .Academia-card:not(:last-child) {
       margin-bottom:1.25rem
     }
-    .accordion-card-bg {
+    .Academia-card-bg {
       height:0;
       transition:height .5s ease
     }
-    .accordion-card-bg,
-    .accordion-card-fg {
+    .Academia-card-bg,
+    .Academia-card-fg {
       position:absolute;
       top:0;
       transition:height .5s ease
     }
-    .accordion-card .image {
+    .Academia-card .image {
       overflow:hidden;
       padding-top:100%;
       position:relative;
       width:100%
     }
-    .accordion-card .image img {
+    .Academia-card .image img {
       left:0;
       position:absolute;
       top:0
     }
-    .accordion-card .info {
+    .Academia-card .info {
       padding:1.25rem
     }
-    .accordion-card .description {
+    .Academia-card .description {
       color:#fff;
       margin-bottom:1.25rem
     }
-    .accordion-card .title {
+    .Academia-card .title {
       padding:1.25rem 1.25rem 1.25rem 0
     }
-    .accordion-card.is-mobile-open,
-    .accordion-card.is-mobile-open .accordion-card-bg {
+    .Academia-card.is-mobile-open,
+    .Academia-card.is-mobile-open .Academia-card-bg {
       height:var(--bg-height)
     }
-    .accordion-card.is-mobile-open .title {
+    .Academia-card.is-mobile-open .title {
       color:#fff;
       left:1.25rem
     }
-    .accordion-card.is-mobile-open .info {
+    .Academia-card.is-mobile-open .info {
       opacity:1
     }
   }
   @media (min-width:62em) {
-    .accordion-card {
+    .Academia-card {
       flex:0 0 25%;
       height:26.5rem;
       margin-right:1rem;
       transition:flex-basis .7s ease-in-out
     }
-    .accordion-card:last-child {
+    .Academia-card:last-child {
       margin-right:0
     }
-    .accordion-card-group {
+    .Academia-card-group {
       display:flex;
       width:100%
     }
-    .accordion-card-container {
+    .Academia-card-container {
       position:relative;
       z-index:9
     }
-    .accordion-card-bg {
+    .Academia-card-bg {
       height:100%;
       left:0;
       position:absolute;
       top:0;
       width:0
     }
-    .accordion-card-content {
+    .Academia-card-content {
       height:100%
     }
-    .accordion-card .description {
+    .Academia-card .description {
       color:#fff;
       flex:1 1 auto;
       font-size:1.125rem;
@@ -218,12 +222,12 @@
       line-height:1.5rem;
       max-width:15.4375rem
     }
-    .accordion-card .title {
+    .Academia-card .title {
       height:8.125rem;
       max-width:15.625rem;
       padding:1.5rem 0 0
     }
-    .accordion-card .info {
+    .Academia-card .info {
       align-items:flex-start;
       bottom:0;
       display:inline-flex;
@@ -234,41 +238,43 @@
       right:0;
       top:0
     }
-    .accordion-card .image {
+    .Academia-card .image {
       height:18.4375rem;
       transition:all .7s ease-in-out;
       width:16.875rem
     }
-    .accordion-card.is-open {
+    .Academia-card.is-open {
       flex-basis:50%
     }
-    .accordion-card.is-open .title {
+    .Academia-card.is-open .title {
       color:#fff;
       left:2rem
     }
-    .accordion-card.is-open .image {
+    .Academia-card.is-open .image {
       width:12.5rem
     }
-    .accordion-card.is-open .accordion-card-bg {
+    .Academia-card.is-open .Academia-card-bg {
       width:100%
     }
-    .accordion-card.is-open .info {
+    .Academia-card.is-open .info {
       opacity:1
     }
   }
   @media (min-width:75em) {
-    .accordion-card {
+    .Academia-card {
       flex-basis:16.875rem;
       margin-right:2rem
     }
-    .accordion-card .info {
+    .Academia-card .info {
       padding-left:18.875rem
     }
-    .accordion-card.is-open .image {
+    .Academia-card.is-open .image {
       width:16.875rem
     }
   }
-
+svg text{
+	font-family: 'Marhey', sans-serif;
+}
 </style>
 </head>
 
@@ -280,7 +286,7 @@
 		<header id="header" class="header-effect-shrink"
 			data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
 			<div class="header-body header-body-bottom-border border-top-0">
-				<div class="header-container container">
+				<div class="header-container container-fluid ps-0">
 					<div class="header-row">
 						<div class="header-column">
 							<div class="header-row">
@@ -299,133 +305,146 @@
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown">
-													<a class="dropdown-item active" href="index.html">
-														Home
-													</a>
-												</li>
-												<li class="dropdown dropdown-mega">
-													<a class="dropdown-item dropdown-toggle" href="cursos.html">
-														Cursos
+													<a class="dropdown-item dropdown-toggle " href="cursos.html">
+														Cursos presenciales
 													</a>
 													<ul class="dropdown-menu">
 														<li>
-															<div class="dropdown-mega-content">
-																<div class="row">
-																	<div class="col-lg-3">
-																		<span class="dropdown-mega-sub-title">Arabízate</span>
-																		<ul class="dropdown-mega-sub-nav">
-																			<li><a class="dropdown-item"
-																					href="cursos-details.html">Cursos en grupo</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																					href="">Clases particulares</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																					href="">Cursos intensivos
-																					<!-- <span
-																						class="tip tip-dark p-relative bottom-2">Cursos Shami/levantino</span> -->
-																					</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																					href="">Cursos Dariya Marroqui</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																					href="">Cursos egipcio</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																					href="">Preparación de examen oficiales</a></li>
-																		</ul>
-																	</div>
-																	<div class="col-lg-3">
-																		<span class="dropdown-mega-sub-title">Cursos Online</span>
-																		<ul class="dropdown-mega-sub-nav">
-																			<li><a class="dropdown-item"
-																					href="">Cursos en grupo
-																			</a></li>
-																			<li><a class="dropdown-item"
-																				href="">Clases particulares
-																			</a></li>
-																			<li><a class="dropdown-item"
-																				href="">Cursos intensivos
-																			</a></li>
-																			<li><a class="dropdown-item"
-																				href="">Cursos Shami/levantino
-																			</a></li>
-																			<li><a class="dropdown-item"
-																				href="">Cursos Dariya Marroqui
-																		</a></li>
-																		<li><a class="dropdown-item"
-																			href="">Cursos egipcio
-																		</a></li>
-																		<li><a class="dropdown-item"
-																			href="">Preparación de examen 
-																		</a></li>
-																		</ul>
-																	</div>
-																	<div class="col-lg-3">
-																		<span class="dropdown-mega-sub-title">Cursos Híbridos</span>
-																		<ul class="dropdown-mega-sub-nav">
-																			<li><a class="dropdown-item"
-																				href="">Cursos en grupo</a>
-																		</li>
-																		<li><a class="dropdown-item"
-																			href="">Clases particulares</a>
-																	</li>
-																	<li><a class="dropdown-item"
-																		href="">Cursos intensivos</a>
-																</li>
-																<li><a class="dropdown-item"
-																	href="">Cursos Shami/levantino</a>
-															</li>
-															<li><a class="dropdown-item"
-																href="">Cursos Dariya Marroqui</a>
+															<a class="dropdown-item"
+																href="cursos-details.html">Cursos en grupo
+															</a>
 														</li>
-														<li><a class="dropdown-item"
-															href="">Cursos egipcio</a>
-													</li>
-													<li><a class="dropdown-item"
-														href="">Preparación de examen oficiales</a>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Clases particulares
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos intensivos
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos Shami/levantino
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos Dariya Marroqui
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos egipcio
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Preparación de examen oficiales
+															</a>
+														</li>
+													</ul>
 												</li>
-																			
-																		</ul>
-																	</div>
-																	<div class="col-lg-3">
-																		<span class="dropdown-mega-sub-title">Academia Árabe</span>
-																		<ul class="dropdown-mega-sub-nav">
-																			<li><a class="dropdown-item"
-																				href="">La Academia</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																				href="">Nuestra Filosofía</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																				href="">Qué Ofrecemos</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																				href="">Actividades</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																				href="">Nuestros profesores</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																				href="">Niveles de Árabe</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																				href="">Trabaja con nosotros</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																				href="">Enlaces de Interés</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																				href="">Instlaaciones</a>
-																			</li>
-																			<li><a class="dropdown-item"
-																				href="">Testimonios</a>
-																			</li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
+												<li class="dropdown">
+													<a class="dropdown-item dropdown-toggle " href="cursos.html">
+														Cursos Online
+													</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Cursos en grupo
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Clases particulares
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos intensivos
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos Shami/levantino
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos Dariya Marroqui
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos egipcio
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Preparación de examen oficiales
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li class="dropdown">
+													<a class="dropdown-item dropdown-toggle " href="cursos.html">
+														Cursos Híbridos
+													</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Cursos en grupo
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Clases particulares
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos intensivos
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos Shami/levantino
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos Dariya Marroqui
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Cursos egipcio
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">
+																Preparación de examen oficiales
+															</a>
 														</li>
 													</ul>
 												</li>
@@ -436,14 +455,14 @@
 													<ul class="dropdown-menu">
 														<li>
 															<a class="dropdown-item"
-																href="">Arabízate
+																href="cursos-details.html">Arabízate
 																<!-- <span
 																	class="tip tip-dark">hot</span> -->
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">cursos online
+																href="cursos-details.html">cursos online
 																<!-- <span
 																	class="tip tip-dark">hot</span> -->
 																</a>
@@ -458,58 +477,114 @@
 													<ul class="dropdown-menu">
 														<li>
 															<a class="dropdown-item"
-																href="">Centro de investigación
+																href="cursos-details.html">Centro de investigación
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">Asesoramiento cultural
+																href="cursos-details.html">Asesoramiento cultural
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">Traducciones
+																href="cursos-details.html">Traducciones
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">Revisión de contenidos
+																href="cursos-details.html">Revisión de contenidos
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">Redacción y edición
+																href="cursos-details.html">Redacción y edición
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">Preparación de exámenes
+																href="cursos-details.html">Preparación de exámenes
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">Publicación digital
+																href="cursos-details.html">Publicación digital
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">Creación de contenido
+																href="cursos-details.html">Creación de contenido
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">Tema principal 1 1
+																href="cursos-details.html">Tema principal 1 1
 																</a>
 														</li>
 														<li>
 															<a class="dropdown-item"
-																href="">Arabízate
+																href="cursos-details.html">Arabízate
 																</a>
 														</li>
 													</ul>
 													
 												</li>
-												
+												<li class="dropdown">
+													<a class="dropdown-item dropdown-toggle " href="cursos.html">
+														Academia Árabe
+													</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">La Academia
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Nuestra Filosofía
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Qué Ofrecemos
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Actividades
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Nuestros profesores
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Niveles de Árabe
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Trabaja con nosotros
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Enlaces de Interés
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Instlaaciones
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item"
+																href="cursos-details.html">Testimonios
+															</a>
+														</li>
+													</ul>
+												</li>
 												<li class="dropdown">
 													<a class="dropdown-item" href="blogs.html">
 														Blog
@@ -534,7 +609,7 @@
 									<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
 									<li class="social-icons-youtube"><a href="http://www.youtube.com/" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
 								</ul>
-								<a href="tel:+1234567890" class="d-none d-md-block font-weight-semibold text-color-dark text-color-hover-primary text-decoration-none custom-font-size ps-1 ms-lg-3 ms-xl-4">(800) 123-4567</a>
+								<a href="tel:+1234567890" class="d-none d-md-block font-weight-semibold text-color-dark text-color-hover-primary text-decoration-none custom-font-size ps-1 ms-lg-2 ms-xl-2">(800) 123-4567</a>
 							</div>
 						</div>
 					</div>
@@ -668,23 +743,23 @@
 							style="font-size:40px;fill: #d3d3d3;">خ</text>
 							<g data-plugin-float-element
 								data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-									<text  x="1051" y="367" stroke="#ddd"
-									style="font-size:40px;fill: #de292c;">د</text>
+									<text  x="1051" y="367" stroke="#dfdfdf"
+									style="font-size:150px;fill: #dfdfdf;">د</text>
 							</g>
 
 							<g data-plugin-float-element
 								data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
 								<text  x="1615" y="734.5" stroke="#ddd"
-								style="font-size:40px;fill: #0b3954;">ج</text>
+								style="font-size:75px;fill: #dfdfdf;">ج</text>
 							</g>
-							<text stroke="#0b3954" stroke-width="2px" x="647.5" y="183" data-plugin-float-element
+							<text stroke="#dfdfdf" stroke-width="2px" x="647.5" y="160" data-plugin-float-element
 								data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}"
-								style="font-size:40px;">أ</text>
+								style="font-size:200px;fill: #dfdfdf">ب</text>
 
 							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
+								data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
 								<text x="1635" y="150.93" stroke-width="2px"
-									style="font-size:40px;fill: #727272;">ب</text>
+									style="font-size:100px;fill: #acabab;">ع</text>
 							</g>
 						</g>
 						<g class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800"
@@ -692,22 +767,22 @@
 							<g data-plugin-float-element
 								data-plugin-options="{'startPos': 'bottom', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
 								<text  x="264" y="303.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;">م</text>
+							style="font-size:50px;fill: #9fc3f9;">م</text>
 							</g>
 							<g data-plugin-float-element
 								data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
 								<text  x="264" y="644.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;">ك</text>
+							style="font-size:100px;fill: #4F4BFC57;">ك</text>
 							</g>
 								<text  x="958.5" y="427" stroke="#ddd"
-							style="font-size:40px;fill: #9fc3f9;" data-plugin-float-element
+							style="font-size:75px;fill: #9fc3f9;" data-plugin-float-element
 							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ي</text>
 								<text  x="1576" y="762.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
+							style="font-size:25px;fill: #4F4BFC;" data-plugin-float-element
 							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ث</text>
 								<text  x="1139" y="216.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ط</text>
+							style="font-size:50px;fill: #46ce667c;" data-plugin-float-element
+							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ض</text>
 						</g>
 					</svg>
 					<div class="container mt-5 pt-5">
@@ -736,58 +811,6 @@
 
 <!-- ********************************** START CURSOS ********************************** -->
 <section class="p-relative parallax section section-parallax section-center py-0 my-0" data-plugin-parallax="" data-plugin-options="{'speed': 1.5, 'scrollableParallax': true, 'scrollableParallaxMinWidth': 991, 'startOffset': 10, 'cssProperty': 'width', 'cssValueStart': 40, 'cssValueEnd': 100, 'cssValueUnit': 'vw'}">
-	<svg style="position: absolute;width: 100%;left: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						x="0px" y="0px" viewBox="0 0 2000 935" xml:space="preserve" data-appear-animation-svg="true"
-						data-plugin-float-element-svg="true">
-						
-						<g class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500"
-							data-appear-animation-duration="2s">
-							<text  x="128.5" y="446" stroke="#ddd"
-							style="font-size:40px;fill: #d3d3d3;">خ</text>
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-									<text  x="1051" y="367" stroke="#ddd"
-									style="font-size:40px;fill: #de292c;">د</text>
-							</g>
-
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-								<text  x="1615" y="734.5" stroke="#ddd"
-								style="font-size:40px;fill: #0b3954;">ج</text>
-							</g>
-							<text stroke="#0b3954" stroke-width="2px" x="647.5" y="183" data-plugin-float-element
-								data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}"
-								style="font-size:40px;">أ</text>
-
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-								<text x="1635" y="150.93" stroke-width="2px"
-									style="font-size:40px;fill: #727272;">ب</text>
-							</g>
-						</g>
-						<g class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800"
-							data-appear-animation-duration="2s">
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'bottom', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-								<text  x="264" y="303.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;">م</text>
-							</g>
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-								<text  x="264" y="644.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;">ك</text>
-							</g>
-								<text  x="958.5" y="427" stroke="#ddd"
-							style="font-size:40px;fill: #9fc3f9;" data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ي</text>
-								<text  x="1576" y="762.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ث</text>
-								<text  x="1139" y="216.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ط</text>
-						</g>
-					</svg>
 	<div class="d-flex justify-content-center">
 		<div class="scrollable-parallax-wrapper">
 			<div class="">
@@ -818,11 +841,11 @@
 												data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Los Mejores Cursos de Inglés</h2>
 										</div>
 									</div>
-										<div class="accordion-card-group">
-														<div class="accordion-card theme-adults is-open" style="--fg-height: 425px; --bg-height: 424px;">
-																		<a href="" class="accordion-card-container">
-																		<div class="accordion-card-bg">
-														<div class="accordion-card-content" style="width: 590px;">
+										<div class="Academia-card-group">
+														<div class="Academia-card theme-presenciales is-open" style="--fg-height: 425px; --bg-height: 424px;">
+																		<a href="" class="Academia-card-container">
+																		<div class="Academia-card-bg">
+														<div class="Academia-card-content" style="width: 590px;">
 															<h2 class="title">Cursos presenciales</h2>
 															<div class="image">
 																<img src="/imgs/cours1.avif" alt="Clases de inglés para adultos" loading="lazy">
@@ -835,8 +858,8 @@
 																								</div>
 														</div>
 													</div>
-													<div class="accordion-card-fg">
-														<div class="accordion-card-content" style="width: 590px;">
+													<div class="Academia-card-fg">
+														<div class="Academia-card-content" style="width: 590px;">
 															<h2 class="title">Cursos presenciales</h2>
 															<div class="image">
 																<img src="/imgs/cours1.avif" alt="Clases de inglés para adultos" loading="lazy">
@@ -845,24 +868,24 @@
 													</div>
 																		</a>
 																</div>
-														<div class="accordion-card theme-junior" style="--fg-height: 425px; --bg-height: 424px;">
-																		<a href="" class="accordion-card-container">
-																		<div class="accordion-card-bg">
-														<div class="accordion-card-content" style="width: 590px;">
+														<div class="Academia-card theme-Online" style="--fg-height: 425px; --bg-height: 424px;">
+																		<a href="" class="Academia-card-container">
+																		<div class="Academia-card-bg">
+														<div class="Academia-card-content" style="width: 590px;">
 															<h2 class="title">Cursos Online</h2>
 															<div class="image">
 																<img src="/imgs/cours2.avif" alt="Clases de inglés para kids &amp; teens" loading="lazy">
 															</div>
 															<div class="info">
 																<p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quasi quisquam nisi cupiditate et! Perspiciatis tempore aliquam esse iusto, pariatur cumque similique ex mollitia totam eius possimus illo quis aut!</p>
-																										<button class="btn btn-modern btn-rounded btn-quaternary mb-2" aria-label="Ver nuestros cursos junior">
-																		<span class="button-text">Ver nuestros cursos junior</span>
+																										<button class="btn btn-modern btn-rounded btn-quaternary mb-2" aria-label="Ver nuestros cursos Online">
+																		<span class="button-text">Ver nuestros cursos Online</span>
 																	</button>
 																								</div>
 														</div>
 													</div>
-													<div class="accordion-card-fg">
-														<div class="accordion-card-content" style="width: 590px;">
+													<div class="Academia-card-fg">
+														<div class="Academia-card-content" style="width: 590px;">
 															<h2 class="title">Cursos Online</h2>
 															<div class="image">
 																<img src="/imgs/cours2.avif" alt="Clases de inglés para kids &amp; teens" loading="lazy">
@@ -871,10 +894,10 @@
 													</div>
 																		</a>
 																</div>
-														<div class="accordion-card theme-companies" style="--fg-height: 425px; --bg-height: 424px;">
-																		<a href="" class="accordion-card-container">
-																		<div class="accordion-card-bg">
-														<div class="accordion-card-content" style="width: 590px;">
+														<div class="Academia-card theme-Híbridos" style="--fg-height: 425px; --bg-height: 424px;">
+																		<a href="" class="Academia-card-container">
+																		<div class="Academia-card-bg">
+														<div class="Academia-card-content" style="width: 590px;">
 															<h2 class="title">Cursos Híbridos</h2>
 															<div class="image">
 																<img src="/imgs/cours3.avif" alt="Cursos de Inglés para Empresas" loading="lazy">
@@ -887,8 +910,8 @@
 																								</div>
 														</div>
 													</div>
-													<div class="accordion-card-fg">
-														<div class="accordion-card-content" style="width: 590px;">
+													<div class="Academia-card-fg">
+														<div class="Academia-card-content" style="width: 590px;">
 															<h2 class="title">Cursos Híbridos</h2>
 															<div class="image">
 																<img src="/imgs/cours3.avif" alt="Cursos de Inglés para Empresas" loading="lazy">
@@ -928,58 +951,6 @@
 								C-39,47.35-38,116.18-37,185z" />
 					</svg>
 				</div>
-				<svg style="position: absolute;width: 100%;left: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						x="0px" y="0px" viewBox="0 0 2000 935" xml:space="preserve" data-appear-animation-svg="true"
-						data-plugin-float-element-svg="true">
-						
-						<g class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500"
-							data-appear-animation-duration="2s">
-							<text  x="128.5" y="446" stroke="#ddd"
-							style="font-size:40px;fill: #d3d3d3;">خ</text>
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-									<text  x="1051" y="367" stroke="#ddd"
-									style="font-size:40px;fill: #de292c;">د</text>
-							</g>
-
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-								<text  x="1615" y="734.5" stroke="#ddd"
-								style="font-size:40px;fill: #0b3954;">ج</text>
-							</g>
-							<text stroke="#0b3954" stroke-width="2px" x="647.5" y="183" data-plugin-float-element
-								data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}"
-								style="font-size:40px;">أ</text>
-
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-								<text x="1635" y="150.93" stroke-width="2px"
-									style="font-size:40px;fill: #727272;">ب</text>
-							</g>
-						</g>
-						<g class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800"
-							data-appear-animation-duration="2s">
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'bottom', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-								<text  x="264" y="303.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;">م</text>
-							</g>
-							<g data-plugin-float-element
-								data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-								<text  x="264" y="644.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;">ك</text>
-							</g>
-								<text  x="958.5" y="427" stroke="#ddd"
-							style="font-size:40px;fill: #9fc3f9;" data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ي</text>
-								<text  x="1576" y="762.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ث</text>
-								<text  x="1139" y="216.5" stroke="#ddd"
-							style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ط</text>
-						</g>
-					</svg>
 				<div class="container position-relative z-index-3 pt-md-5 pb-1 pb-sm-5 my-5">
 					<div class="row justify-content-center pt-5">
 						<div class="col-lg-10 text-center">
@@ -1141,59 +1112,6 @@
 <!-- ********************************** START What Students Say ********************************** -->
 			<section class="p-relative section custom-bg-color-grey-1 border-0 m-0">
 				<div class="container position-relative my-4">
-					<svg style="position: absolute;width: 100%;left: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-					x="0px" y="0px" viewBox="0 0 2000 935" xml:space="preserve" data-appear-animation-svg="true"
-					data-plugin-float-element-svg="true">
-					
-					<g class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500"
-						data-appear-animation-duration="2s">
-						<text  x="128.5" y="446" stroke="#ddd"
-						style="font-size:40px;fill: #d3d3d3;">خ</text>
-						<g data-plugin-float-element
-							data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-								<text  x="1051" y="367" stroke="#ddd"
-								style="font-size:40px;fill: #de292c;">د</text>
-						</g>
-
-						<g data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-							<text  x="1615" y="734.5" stroke="#ddd"
-							style="font-size:40px;fill: #0b3954;">ج</text>
-						</g>
-						<text stroke="#0b3954" stroke-width="2px" x="647.5" y="183" data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}"
-							style="font-size:40px;">أ</text>
-
-						<g data-plugin-float-element
-							data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-							<text x="1635" y="150.93" stroke-width="2px"
-								style="font-size:40px;fill: #727272;">ب</text>
-						</g>
-					</g>
-					<g class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800"
-						data-appear-animation-duration="2s">
-						<g data-plugin-float-element
-							data-plugin-options="{'startPos': 'bottom', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-							<text  x="264" y="303.5" stroke="#ddd"
-						style="font-size:40px;fill: #4F4BFC;">م</text>
-						</g>
-						<g data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-							<text  x="264" y="644.5" stroke="#ddd"
-						style="font-size:40px;fill: #4F4BFC;">ك</text>
-						</g>
-							<text  x="958.5" y="427" stroke="#ddd"
-						style="font-size:40px;fill: #9fc3f9;" data-plugin-float-element
-						data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ي</text>
-							<text  x="1576" y="762.5" stroke="#ddd"
-						style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
-						data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ث</text>
-							<text  x="1139" y="216.5" stroke="#ddd"
-						style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
-						data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ط</text>
-					</g>
-				</svg>
-
 					<div class="row mb-4">
 						<div class="col text-center">
 							<div class="overflow-hidden">
@@ -1389,58 +1307,6 @@
 								C-39,47.35-38,116.18-37,185z" />
 					</svg>
 				</div>
-				<svg style="position: absolute;width: 100%;left: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	x="0px" y="0px" viewBox="0 0 2000 935" xml:space="preserve" data-appear-animation-svg="true"
-	data-plugin-float-element-svg="true">
-	
-	<g class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500"
-		data-appear-animation-duration="2s">
-		<text  x="128.5" y="446" stroke="#ddd"
-		style="font-size:40px;fill: #d3d3d3;">خ</text>
-		<g data-plugin-float-element
-			data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-				<text  x="1051" y="367" stroke="#ddd"
-				style="font-size:40px;fill: #de292c;">د</text>
-		</g>
-
-		<g data-plugin-float-element
-			data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-			<text  x="1615" y="734.5" stroke="#ddd"
-			style="font-size:40px;fill: #0b3954;">ج</text>
-		</g>
-		<text stroke="#0b3954" stroke-width="2px" x="647.5" y="183" data-plugin-float-element
-			data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}"
-			style="font-size:40px;">أ</text>
-
-		<g data-plugin-float-element
-			data-plugin-options="{'startPos': 'bottom', 'speed': 0.3, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-			<text x="1635" y="150.93" stroke-width="2px"
-				style="font-size:40px;fill: #727272;">ب</text>
-		</g>
-	</g>
-	<g class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800"
-		data-appear-animation-duration="2s">
-		<g data-plugin-float-element
-			data-plugin-options="{'startPos': 'bottom', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-			<text  x="264" y="303.5" stroke="#ddd"
-		style="font-size:40px;fill: #4F4BFC;">م</text>
-		</g>
-		<g data-plugin-float-element
-			data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">
-			<text  x="264" y="644.5" stroke="#ddd"
-		style="font-size:40px;fill: #4F4BFC;">ك</text>
-		</g>
-			<text  x="958.5" y="427" stroke="#ddd"
-		style="font-size:40px;fill: #9fc3f9;" data-plugin-float-element
-		data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ي</text>
-			<text  x="1576" y="762.5" stroke="#ddd"
-		style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
-		data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ث</text>
-			<text  x="1139" y="216.5" stroke="#ddd"
-		style="font-size:40px;fill: #4F4BFC;" data-plugin-float-element
-		data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'isInsideSVG': true, 'transition': true, 'transitionDuration': 2000}">ط</text>
-	</g>
-</svg>
 				<div class="container position-relative z-index-3 pt-2 pt-md-5 pb-1 pb-md-5 mt-5 mb-5 mb-lg-0 mb-xl-5">
 					<div class="row pb-2 mt-5 mb-5">
 						<div class="col text-center">
@@ -1655,9 +1521,9 @@
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
 <script>
-	$(".accordion-card").hover(
+	$(".Academia-card").hover(
         function () {
-         $(".accordion-card").removeClass('is-open is-mobile-open');
+         $(".Academia-card").removeClass('is-open is-mobile-open');
         $(this).addClass("is-open is-mobile-open");
         },
        
