@@ -3433,7 +3433,7 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 }
 
 .btn-gradient:not(.btn-outline) {
-	background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 80%) !important;
+	background: linear-gradient(135deg, #0485ce 0%,#504bfd 80%) !important;
 	color: var(--primary-inverse);
 }
 
