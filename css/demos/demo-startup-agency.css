@@ -209,12 +209,16 @@ body {
 @media (min-width: 992px) {
 	#header .header-nav-main nav > ul > li > a {
 		font-size: .9rem;
-font-weight: 501;
-text-transform: none;
-letter-spacing: -1px;
+		font-weight: 501;
+		text-transform: none;
+		letter-spacing: -1px;
 }
 }
-
+@media (min-width: 1366 ) {
+	#header .header-nav-main nav > ul > li > a {
+		font-size: 1.1rem;
+}
+}
 /*
 * Home - Intro
 */

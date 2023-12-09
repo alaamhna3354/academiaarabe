@@ -16,7 +16,9 @@ html {
 		scroll-behavior: auto;
 	}
 }
-
+.a-logo:hover{
+	color: #0b3954;
+}
 body {
 	background-color: var(--light);
 	color: var(--default);
