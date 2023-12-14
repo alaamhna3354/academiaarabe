@@ -10130,6 +10130,7 @@ h1 {
 	font-size: 2.6em;
 	line-height: 44px;
 	margin: 0 0 32px 0;
+	letter-spacing: .2px;
 }
 
 h2 {
@@ -10137,6 +10138,7 @@ h2 {
 	font-weight: 300;
 	line-height: 42px;
 	margin: 0 0 32px 0;
+	letter-spacing: .2px;
 }
 
 h3 {
@@ -10145,21 +10147,24 @@ h3 {
 	line-height: 24px;
 	margin-bottom: 33px;
 	text-transform: uppercase;
+	letter-spacing: .2px;
 }
 
 h4 {
 	font-size: 1.4em;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: 27px;
 	margin: 0 0 14px 0;
+	letter-spacing: .2px;
 }
 
 h5 {
 	font-size: 1em;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: 18px;
 	margin: 0 0 14px 0;
 	text-transform: uppercase;
+	letter-spacing: .2px;
 }
 
 h6 {
@@ -10168,6 +10173,7 @@ h6 {
 	font-weight: 400;
 	line-height: 18px;
 	margin: 0 0 14px 0;
+	letter-spacing: .2px;
 }
 
 h1.big {
@@ -17480,7 +17486,6 @@ html.gecko .sort-destination.sort-destination-margin > [class*="col-"] {
 .nav-tabs li .nav-link {
 	border-radius: 5px 5px 0 0;
 	font-size: 13px;
-	font-weight: 600;
 	letter-spacing: -0.2px;
 	padding: 11.2px 24px;
 	padding: .7rem 1.5rem;

@@ -1535,12 +1535,11 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 		border-bottom: 1px solid var(--grey-100);
 		color: var(--default);
 		font-size: 0.83em;
-		font-weight: 400;
+		font-weight: 501;
 		padding: 6px 18px 6px 18px;
 		position: relative;
 		text-transform: none;
 		text-decoration: none;
-		letter-spacing: -0.5px;
 	}
 
 	#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a:hover, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a:focus, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a.active, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a:active {
