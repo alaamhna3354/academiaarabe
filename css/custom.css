@@ -11,3 +11,65 @@
 #contact-card{
     border: 2px solid #0b3954b6;
 }
+/* member */
+.member-content .member:first-child .member-bottom{
+    border-right: 1px solid #979797;
+}
+.member-top{
+ position: relative;
+ background-color: #0b3954;
+ height: 200px;
+}
+.member-avatar{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.member-avatar {
+    -webkit-filter: grayscale(1);
+  }
+.member-avatar:hover {
+    filter: none;
+    -webkit-filter: none;
+  }
+.member-social {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.member-social i {
+    background-color: #0b3954;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+.member-bottom{
+    padding: 20px;
+    background-color: #eeeeee;
+}
+.member-role{
+    font-size: 16px;
+    font-stretch: extra-condensed;
+    font-weight: 700 !important;
+    color: #000;
+}
+.member-bio div{
+    overflow: hidden;
+    height: 150px;
+    transition: .5s;
+}
+.member-bio div.active{
+    height: 100%;
+}
+.member-name{
+    font-size: 20px;
+  font-stretch: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.55;
+  margin-bottom: 5px;
+}
