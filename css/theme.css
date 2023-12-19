@@ -1534,7 +1534,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a {
 		border-bottom: 1px solid var(--grey-100);
 		color: var(--default);
-		font-size: 0.83em;
+		font-size: .9em;
 		font-weight: 501;
 		padding: 6px 18px 6px 18px;
 		position: relative;
