@@ -1854,10 +1854,6 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 		text-decoration: none;
 	}
 }
-#header .a-logo img {
-	width: 30px;
-}
-
 @media (max-width: 991px) {
 	#header .logo-column{
 		width: 200px;
@@ -1926,20 +1922,6 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 		font-size: 15px;
 	}
 }
-/* @media (max-width: 1176px){
-	#header .a-logo img {
-		width: 30px;
-	}
-	#header .logo-text{
-		font-size: 14px;
-	}
-	#header .header-nav-main nav > ul > li > a {
-		font-size: 13px;
-	}
-	.num-contact{
-		font-size: 14px;
-	}
-} */
  
 @media (min-width: 992px) and (min-width: 992px) {
 	#header .header-nav-main.header-nav-main-slide nav > ul > li > a.dropdown-toggle:after {
