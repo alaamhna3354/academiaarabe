@@ -215,25 +215,9 @@ body .a-logo span{
 /* 
 * Header
 */
-@media (min-width: 1200px) {
-		/* #header .header-nav-main nav > ul > li {
-				margin-left: 15px;
-		} */
-}
-@media only screen and (max-width: 1366px) {
-	#header .header-nav-main nav > ul > li > a {
-		font-size: 1rem;
-		font-weight: bold;
-		text-transform: none;
-		letter-spacing: 1px;
-}
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1367px) {
-	#header .header-nav-main nav > ul > li > a {
-		font-size: 1.2rem !important;
-}
-}
+
+
+
 
 /*
 * Home - Intro
