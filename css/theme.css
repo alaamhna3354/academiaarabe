@@ -1922,22 +1922,22 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 		font-size: 15px;
 	}
 }
-@media (min-width:1367px  ) and (max-width: 1500px) {
+@media (min-width:1367px  ) and (max-width:1639px) {
 	#header .header-nav-main nav > ul > li {
-		margin-left: 1rem;
+		margin-left: .5rem;
 	}
 	#header .header-nav-main nav > ul > li > a {
-		font-size: 18px;
+		font-size: 16px;
 		letter-spacing: 1px;
 	}
 	#header .logo-text{
-		font-size: 20px;
+		font-size: 19px;
 	}
 	#header .num-contact {
-		font-size: 16px;
+		font-size: 15px;
 	}
 }
-@media (min-width:1501px  ) and (max-width: 2500px) {
+@media (min-width:1640px  ) and (max-width: 2500px) {
 	#header .header-nav-main nav > ul > li {
 		margin-left: 1rem;
 	}
